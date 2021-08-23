@@ -99,7 +99,7 @@ function myFunction() {
     for (let variable of sections) {
       console.log(variable);
       console.log(Math.floor(document.querySelector(variable).getBoundingClientRect().top));
-      if (Math.floor(document.querySelector(variable).getBoundingClientRect().top)>-50 && Math.floor(document.querySelector(variable).getBoundingClientRect().top)<=50) {
+      if (Math.floor(document.querySelector(variable).getBoundingClientRect().top)>-250 && Math.floor(document.querySelector(variable).getBoundingClientRect().top)<=250) {
         strx=document.querySelector(variable).id;
         let matches = strx.match(/\d+/g);
         let num=matches[0];
